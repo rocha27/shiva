@@ -1,0 +1,257 @@
+<div class="container">
+  <div>
+    <h1>Inclusão de Pedido de LPCO</h1>
+    <div class="ui-g">
+      <div class="ui-g-8 ui-lg-4 ui-lg-offset-0 ui-g-nopad">
+        <label class="pad asterisk">CPF/CNPJ do exportador:</label>
+        <p><input class="single-line"
+                  pInputText type="text"
+                  required
+                  maxlength="256"/>
+        </p>
+      </div>
+      <div class="ui-g-8 ui-lg-12 ui-lg-offset-0 ui-g-nopad">
+        <h2>Informações Gerais</h2>
+        <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid">
+          <div class="ui-grid-row">
+            <div class="ui-grid-col-6">
+              <label class="asterisk">Enquadramento da operação:</label>
+              <p-dropdown [options]="teste" [(ngModel)]="valorDrop" placeholder="Selecione..."></p-dropdown>
+            </div>
+            <div class="ui-grid-col-6">
+              <label class="asterisk">Usos propostos:</label>
+              <p-dropdown [options]="teste" [(ngModel)]="valorDrop" placeholder="Selecione..."></p-dropdown>
+            </div>
+            <div class="ui-grid-col-6">
+              <label class="asterisk">Unidade do Vigiagro:</label>
+              <p-dropdown [options]="teste" [(ngModel)]="valorDrop" placeholder="Selecione..."></p-dropdown>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui-g-8 ui-lg-12 ui-lg-offset-0 ui-g-nopad">
+      <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid">
+        <div class="ui-grid-row mt-1">
+          <div class="ui-grid-col-6">
+            <label class="asterisk">Tipo de Certificado:</label>
+            <p-dropdown [options]="teste" [(ngModel)]="valorDrop" placeholder="Selecione..."></p-dropdown>
+          </div>
+          <div class="ui-grid-col-6">
+            <label class="asterisk">Programa de Certificação na Origem:</label>
+            <div class="ui-g-12">
+              <div class="ui-grid-row">
+                <input type="radio" class="radio-marking">
+                <label class="radio-label">Sim</label>
+                <input type="radio" class="radio-marking">
+                <label class="radio-label">Não</label>
+              </div>
+            </div>
+
+          </div>
+          <div class="ui-grid-col-6">
+            <label class="asterisk">Tradução para Inglês:</label>
+            <div class="ui-g-12">
+              <div class="ui-grid-row">
+                <input type="radio" class="radio-marking">
+                <label class="radio-label">Sim</label>
+                <input type="radio" class="radio-marking">
+                <label class="radio-label">Não</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui-g-8 ui-lg-12 ui-lg-offset-0 ui-g-nopad">
+      <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid">
+        <div class="ui-grid-row mt-1">
+          <div class="ui-grid-col-6">
+            <label>Nome do Exportador:</label>
+            <textarea rows="5" cols="40" pInputTextarea></textarea>
+          </div>
+          <div class="ui-grid-col-6">
+            <label>Endereço do Exportador:</label>
+            <textarea rows="5" cols="40" pInputTextarea></textarea>
+          </div>
+          <div class="ui-grid-col-6">
+            <label>Produtor ou Fabricante:</label>
+            <textarea rows="5" cols="40" pInputTextarea></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui-g-8 ui-lg-12 ui-lg-offset-0 ui-g-nopad">
+      <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid">
+        <div class="ui-grid-row mt-1">
+          <div class="ui-grid-col-6">
+            <label class="asterisk">Município do local de produção:</label>
+            <p-dropdown [options]="teste" [(ngModel)]="valorDrop" placeholder="Selecione..."></p-dropdown>
+          </div>
+          <div class="ui-grid-col-6">
+            <label class="asterisk">País de Origem:</label>
+            <textarea rows="5" cols="40" pInputTextarea></textarea>
+          </div>
+          <div class="ui-grid-col-6">
+            <label class="asterisk">Meio de transporte:</label>
+            <p-dropdown [options]="teste" [(ngModel)]="valorDrop" placeholder="Selecione..."></p-dropdown>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui-g-8 ui-lg-12 ui-lg-offset-0 ui-g-nopad">
+      <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid">
+        <div class="ui-grid-row mt-1">
+          <div class="ui-grid-col-6">
+            <label>Previsão de embarque:</label>
+            <p-calendar
+              [(ngModel)]="value" showIcon="pi pi-calendar" dateFormat="dd/mm/yy" placeholder="__/__/____"></p-calendar>
+          </div>
+          <div class="ui-grid-col-6">
+            <label class="asterisk">Veículo / Voo:</label>
+            <textarea rows="5" cols="40" pInputTextarea></textarea>
+          </div>
+          <div class="ui-grid-col-6">
+            <label class="asterisk">Nº do conteiner:</label>
+            <input
+              placeholder="Selecione..."
+              pInputText type="text"
+              required
+              maxlength="256"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui-g-8 ui-lg-12 ui-lg-offset-0 ui-g-nopad">
+      <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid">
+        <div class="ui-grid-row mt-1">
+          <div class="ui-grid-col-6">
+            <label>Nº do lacre:</label>
+            <input
+              placeholder="Selecione..."
+              pInputText type="text"
+              required
+              maxlength="256"/>
+          </div>
+          <div class="ui-grid-col-6">
+            <label>Recinto aduaneiro de despacho:</label>
+            <p-dropdown [options]="teste" [(ngModel)]="valorDrop" placeholder="Selecione..."></p-dropdown>
+          </div>
+          <div class="ui-grid-col-6">
+            <label>Recinto aduaneiro de embarque:</label>
+            <p-dropdown [options]="teste" [(ngModel)]="valorDrop" placeholder="Selecione..."></p-dropdown>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui-g-8 ui-lg-12 ui-lg-offset-0 ui-g-nopad">
+      <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid">
+        <div class="ui-grid-row mt-1">
+          <div class="ui-grid-col-6">
+            <label>Peso Líquido Total (Kg):</label>
+            <input
+              placeholder="Selecione..."
+              pInputText type="text"
+              required
+              maxlength="256"/>
+          </div>
+          <div class="ui-grid-col-6">
+            <label class="asterisk">Local de armazenamento:</label>
+            <textarea rows="5" cols="40" pInputTextarea></textarea>
+          </div>
+          <div class="ui-grid-col-6">
+            <label class="asterisk">Quantidade de Certificados por LPCO:</label>
+            <input
+              pInputText type="text"
+              required
+              maxlength="256"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui-g-8 ui-lg-12 ui-lg-offset-0 ui-g-nopad">
+      <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid">
+        <h3>Mercadoria</h3>
+        <div class="ui-grid-row mt-1">
+          <div class="ui-grid-col-2">
+            <label class="asterisk">NCM:</label>
+            <input
+              pInputText type="text"
+              required
+              maxlength="256"
+              placeholder="_______"
+            />
+          </div>
+          <p-button id="btn" label="Adicionar Item"></p-button>
+        </div>
+      </div>
+    </div>
+    <div class="ui-g-8 ui-lg-12 ui-lg-offset-0 ui-g-nopad">
+      <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid">
+        <div class="ui-grid-row mt-1">
+          <div class="ui-grid-col-12">
+            <label>Informações Adicionais</label>
+            <textarea id="area" rows="5" cols="40" pInputTextarea></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p-table>
+      <ng-template pTemplate="header">
+        <tr>
+          <th *ngFor="let col of teste">
+            {{col.label}}
+          </th>
+        </tr>
+        <tr>
+          <th *ngFor="let col of teste">
+            {{col.label}}
+          </th>
+        </tr>
+        <tr>
+          <th *ngFor="let col of teste">
+            {{col.label}}
+          </th>
+        </tr>
+        <tr>
+          <th *ngFor="let col of teste">
+            {{col.label}}
+          </th>
+        </tr>
+        <tr>
+          <th *ngFor="let col of teste">
+            {{col.label}}
+          </th>
+        </tr>
+        <tr>
+          <th *ngFor="let col of teste">
+            {{col.label}}
+          </th>
+        </tr>
+        <tr>
+          <th *ngFor="let col of teste">
+            {{col.label}}
+          </th>
+        </tr>
+        <tr>
+          <th *ngFor="let col of teste">
+            {{col.label}}
+          </th>
+        </tr>
+        <tr>
+          <th *ngFor="let col of teste">
+            {{col.label}}
+          </th>
+        </tr><tr>
+        <th *ngFor="let col of teste">
+          {{col.label}}
+        </th>
+      </tr>
+
+
+      </ng-template>
+
+    </p-table>
+
+  </div>
+</div>

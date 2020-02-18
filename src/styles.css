@@ -1,0 +1,149 @@
+input {
+  background-color: #e0e2e3;
+  border: none;
+  height: 28px;
+  width: 100%;
+  padding: 6px 12px;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 15px;
+  color: #455d7a;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #455d7a;
+  padding-left: 20px;
+}
+
+label {
+  color: #455d7a;
+  margin-left: 7px;
+  font-size: 14px;
+}
+
+span {
+  color: black;
+}
+body .ui-corner-all {
+  border-radius: 0px !important; ;
+}
+body .ui-inputtext {
+  background-color: #e0e2e3 !important;
+}
+
+body .ui-dropdown .ui-dropdown-trigger {
+  background-color: #aaa !important;
+}
+body .ui-dropdown {
+  border: transparent !important;
+}
+
+body .ui-button {
+  background-color: #aaa !important;
+  border-color: #aaa !important;
+}
+
+body .ui-button.ui-button-text-only .ui-button-text {
+  color: white !important;
+}
+
+textarea {
+  padding: 6px 12px !important;
+}
+
+body .ui-calendar.ui-calendar-w-btn .ui-datepicker-trigger.ui-button {
+  height: 26px !important;
+  border: none;
+}
+
+body .ui-fluid .ui-calendar.ui-calendar-w-btn input.ui-inputtext {
+  padding: 6px 12px;
+  border-color: #e0e2e3 !important;
+}
+body .ui-table .ui-table-thead > tr > th {
+  background-color: #e0e2e3 !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 14px;
+  font-weight: 500 !important;
+  border-color: #aaa !important;
+
+}
+
+.ui-dropdown label.ui-dropdown-label {
+  cursor: pointer;
+  height: 28px;
+  padding: 6px 12px;
+}
+
+.ui-button.ui-button-icon-only .ui-button-text {
+  background-color: #e0e2e3;
+  padding: 0.12cm !important;
+}
+
+.pi-calendar:before {
+  color: #da9223;
+}
+
+.single-line {
+  background-color: #e0e2e3;
+  border: none;
+  height: 28px;
+  width: 98%;
+}
+
+.pad {
+  padding-left: 7px;
+}
+
+.mt-1 {
+  margin-top: 1%;
+}
+
+.asterisk:before {
+  content: " *";
+  color: red;
+  padding-right: 5px;
+}
+
+#btn {
+  margin-top: 25px;
+  padding-left: 25px;
+}
+
+#area {
+  background-color: #ffffff !important;
+  height: 60px;
+}
+
+.radio-marking {
+  width: 13px;
+  height: 13px;
+  margin-left: 20px;
+}
+
+.radio-label {
+  color: black;
+  padding-left: 5px;
+  margin-right: 58px;
+}
+
+#btn-finally {
+  margin-left: 47%;
+  margin-top: 20px;
+  background-color: greenyellow !important;
+}
+
